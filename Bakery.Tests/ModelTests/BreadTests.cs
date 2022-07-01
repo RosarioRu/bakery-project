@@ -8,10 +8,4 @@ namespace Bakery.Tests
   {
     // Test methods for Bread go here
   }
-
-  [TestClass]
-  public class PastryTests
-  {
-    //test methods for pastries go here
-  }
 }
