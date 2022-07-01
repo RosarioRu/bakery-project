@@ -17,9 +17,17 @@ namespace Bakery.Tests
     public void GetLoavesOfBread_DisplaysHowManyLoavesInInstanceOfBread_int()
     { 
       int numberOfLoavesRequested = 4;
-      Bread newBreadOrder = new Bread(4);
+      Bread newBreadOrder = new Bread(numberOfLoavesRequested);
       int result = newBreadOrder.LoavesOfBread;
       Assert.AreEqual(numberOfLoavesRequested, result);
     }
+
+    [TestMethod]
+    public void CostOfBread_CalculatesCostOfBread_int()
+    {
+      int numberOfLoavesRequested = 1;
+      Bread newBreadOrder = new Bread(numberOfLoavesRequested);
+      int result = newBreadOrder.CostOfBread();
+      Assert.AreEqual(5, result);
   }
 }
