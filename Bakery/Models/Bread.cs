@@ -22,15 +22,7 @@ namespace Bakery.Models
     //private methods
     private int CostOfBread()
     {
-      if (LoavesOfBread == 1)
-      {
-        return 5;
-      } 
-      else
-      {
-        return 0;
-      }
-      
+      return LoavesOfBread*5;    
     }
     //properties, constructors, methods, etc. 
   }
