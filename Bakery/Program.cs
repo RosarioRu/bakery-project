@@ -28,13 +28,7 @@ namespace Bakery
       int toalCostOfBread = breadOrder.DisplayBreadTotal();
       int totalCostOfPastry = pastryOrder.DisplayPastryTotal();
       int orderTotal = toalCostOfBread + totalCostOfPastry;
-      Console.WriteLine("Your total is " + orderTotal);
-
-
-
-
-
-
+      Console.WriteLine("Your total is " + "$" + orderTotal + ".");
     }
   }
 }
