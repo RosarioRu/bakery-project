@@ -13,11 +13,11 @@
 
 ## Description
 
-_This project was created as an independent project for Epicodus in order to demonstrate understanding of test-driven-development in C#. The program takes user input and creates instances of the classes 'Bread' and 'Pastry.' Methods for calculating the cost of bread and pastry are then called on these instances.
+_This project was created as an independent project for Epicodus in order to demonstrate understanding of test-driven-development in C#. The program takes user input and creates instances of the classes 'Bread' and 'Pastry.' Methods for calculating the cost of bread and pastry are then called on these instances._
 
-The console application prints the total cost of the order to the user.
+_The console application prints the total cost of the order to the user._
 
-MSTest was used to unit test the Models. The price for bread/pastries varies due to 'specials' so branching was used to calculate price for each class independently (Bread/Pastry). 
+_MSTest was used to unit test the Models. The price for bread/pastries varies due to 'specials' so branching was used to calculate price for each class independently (Bread/Pastry)._
 
 ## Setup/Installation Requirements
 
