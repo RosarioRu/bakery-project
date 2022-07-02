@@ -20,6 +20,9 @@ namespace Bakery.Models
     //private methods
     private int PastryTotal()
     {
+      if (NumberOfPastries == 5)
+      {
+        return 
       return NumberOfPastries * 2;
     }
 
