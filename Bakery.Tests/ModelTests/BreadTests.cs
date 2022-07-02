@@ -30,5 +30,13 @@ namespace Bakery.Tests
       int result = newBreadOrder.DisplayBreadTotal();
       Assert.AreEqual(5, result);
     }
+
+    [TestMethod] //fourth test
+    public void DisplayBreadTotal_CalculatesCostOf2Loaves_int()
+    {
+      int numberOfLoavesRequested = 2;
+      Bread newBreadOrder = new Bread(numberOfLoavesRequested);
+      int result = newBreadOrder.DisplayBreadTotal();
+      Assert.AreEqual(10, result);
   }
 }
