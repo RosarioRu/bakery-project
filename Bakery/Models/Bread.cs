@@ -14,9 +14,9 @@ namespace Bakery.Models
     }
 
      //public methods
-    public void DisplayBreadTotal()
+    public int DisplayBreadTotal()
     {
-      CostOfBread();
+      return CostOfBread();
     }
 
     //private methods
@@ -24,8 +24,13 @@ namespace Bakery.Models
     {
       if (LoavesOfBread == 1)
       {
-        private int breadTotal = 5;
+        return 5;
       } 
+      else
+      {
+        return 0;
+      }
+      
     }
     //properties, constructors, methods, etc. 
   }

@@ -1,19 +1,19 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Bakery.Tests
 {
   [TestClass]
   public class BreadTests
   {
-    [TestMethod]
+    [TestMethod] //first test
     public void BreadConstructor_CreatesAnInstanceOfBread_Bread()
     {
       Bread newBreadOrder = new Bread(1);
       Assert.AreEqual(typeof(Bread), newBreadOrder.GetType());
     }
 
-    [TestMethod]
+    [TestMethod] //second test
     public void GetLoavesOfBread_DisplaysHowManyLoavesInInstanceOfBread_int()
     { 
       int numberOfLoavesRequested = 4;
@@ -22,12 +22,13 @@ namespace Bakery.Tests
       Assert.AreEqual(numberOfLoavesRequested, result);
     }
 
-    [TestMethod]
-    public void CostOfBread_CalculatesCostOfBread_int()
+    [TestMethod] //third test
+    public void DisplayBreadTotal_CalculatesCostOfBread_int()
     {
       int numberOfLoavesRequested = 1;
       Bread newBreadOrder = new Bread(numberOfLoavesRequested);
-      int result = newBreadOrder.CostOfBread();
+      int result = newBreadOrder.DisplayBreadTotal();
       Assert.AreEqual(5, result);
+    }
   }
 }
