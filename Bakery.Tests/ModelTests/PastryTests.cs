@@ -39,6 +39,15 @@ namespace Bakery.Tests
       int result = newPastryOrder.DisplayPastryTotal();
       Assert.AreEqual(4, result);
     }
+
+    [TestMethod] //fifth test
+    public void DisplayBreadTotal_CalculateCostOfThreePastry_int()
+    {
+      int numberOfPastriesRequested = 3;
+      Pastry newPastryOrder = new Pastry(numberOfPastriesRequested);
+      int result = newPastryOrder.DisplayPastryTotal();
+      Assert.AreEqual(5, result);
+    }
     
 
   }
