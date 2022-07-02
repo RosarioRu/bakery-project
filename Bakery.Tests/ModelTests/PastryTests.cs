@@ -12,12 +12,16 @@ namespace Bakery.Tests
       Pastry newPastryOrder = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastryOrder.GetType());
     }
-    // [TestMethod] //first test
-    // public void BreadConstructor_CreatesAnInstanceOfBread_Bread()
-    // {
-    //   Bread newBreadOrder = new Bread(1);
-    //   Assert.AreEqual(typeof(Bread), newBreadOrder.GetType());
-    // }
-    //test methods for pastries go here
+
+    [TestMethod] //second test
+    public void GetNumberOfPastries_RetrieveHowManyPastriesInInstanceOfPastry_int()
+    {
+      int numberOfPastriesRequested = 1;
+      Pastry newPastryOrder = new Pastry(numberOfPastriesRequested);
+      int result = newPastryOrder.NumberOfPastries;
+      Assert.AreEqual(numberOfPastriesRequested, result);
+    }
+    
+
   }
 }
