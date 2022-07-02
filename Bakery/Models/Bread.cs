@@ -14,11 +14,11 @@ namespace Bakery.Models
      //public methods
     public int DisplayBreadTotal()
     {
-      return CostOfBread();
+      return BreadTotal();
     }
 
     //private methods
-    private int CostOfBread()
+    private int BreadTotal()
     {
       return LoavesOfBread * 5 - (LoavesOfBread/3*5);    
     }
