@@ -57,6 +57,5 @@ namespace Bakery.Tests
       int result = newBreadOrder.DisplayBreadTotal();
       Assert.AreEqual(30, result);
     }
-
   }
 }
