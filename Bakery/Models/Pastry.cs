@@ -12,8 +12,17 @@ namespace Bakery.Models
     }
 
     //public methods
+    public int DisplayPastryTotal()
+    {
+      return PastryTotal();
+    }
 
     //private methods
+    private int PastryTotal()
+    {
+      return NumberOfPastries * 2;
+    }
+
 
 
     // properties
