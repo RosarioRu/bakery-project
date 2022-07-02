@@ -1,4 +1,4 @@
-using Bakery;
+using Bakery.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Bakery.Tests
