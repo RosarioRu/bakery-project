@@ -23,7 +23,16 @@ namespace Bakery
       Console.WriteLine(" ");
       Console.WriteLine("You have requested " + requestedLoaves + " loaves of bread and " + requestedPastries + " croissants."); 
 
-      
+      Bread breadOrder = new Bread(requestedLoaves);
+      Pastry pastryOrder = new Pastry(requestedPastries);
+      int toalCostOfBread = breadOrder.DisplayBreadTotal();
+      int totalCostOfPastry = pastryOrder.DisplayPastryTotal();
+      int orderTotal = toalCostOfBread + totalCostOfPastry;
+      Console.WriteLine("Your total is " + orderTotal);
+
+
+
+
 
 
     }
