@@ -1,5 +1,3 @@
-using System;
-
 namespace Bakery.Models
 {
   public class Bread
@@ -26,4 +24,4 @@ namespace Bakery.Models
     }
     //properties, constructors, methods, etc. 
   }
-}
+} 
