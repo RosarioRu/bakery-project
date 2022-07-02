@@ -21,15 +21,15 @@ MSTest was used to unit test the Models. The price for bread/pastries varies due
 
 ## Setup/Installation Requirements
 
-* _Clone repository from Github and save a copy on own computer_
+* _Clone repository from Github and save a copy on own computer._
 
-* _If saving repository remotely, make an initial commit pushing ONLY your .gitignore file so bin/ and obj/ directories are not pushed_
+* _If saving repository remotely, make an initial commit pushing ONLY your .gitignore file so bin/ and obj/ directories are not pushed._
 
-* _Ensure you have C# and .NET installed by running the command [dotnet --version] in your terminal. If the response is not a version number, install .NET from Microsoft website_
+* _Ensure you have C# and .NET installed by running the command [dotnet --version] in your terminal. If the response is not a version number, install .NET from Microsoft website._
 
-* _Navigate to the Bakery directory in the project and run the command [dotnet build]_
+* _Navigate to the Bakery directory in the project and run the command [dotnet build]._
 
-* _While still in the Bakery subdirectory, run te command [dotnet run] to run the console application._
+* _While still in the Bakery subdirectory, run the command [dotnet run] to run the console application._
 
 ## Known Bugs
 
