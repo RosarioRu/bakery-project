@@ -3,8 +3,13 @@ namespace Bakery.Models
   public class Pastry
   {
     //properties
+    public int NumberOfPastries {get;}
 
     //constructor
+    public Pastry(int numberOfPastries)
+    {
+      NumberOfPastries = numberOfPastries;
+    }
 
     //public methods
 
