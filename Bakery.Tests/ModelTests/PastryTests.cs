@@ -30,7 +30,7 @@ namespace Bakery.Tests
       int result = newPastryOrder.DisplayPastryTotal();
       Assert.AreEqual(2, result);
     }
-
+    
     [TestMethod] // fourth test
     public void DisplayPastryTotal_CalculatesCostOfTwoPastry_int()
     {
@@ -41,14 +41,37 @@ namespace Bakery.Tests
     }
 
     [TestMethod] //fifth test
-    public void DisplayBreadTotal_CalculateCostOfThreePastry_int()
+    public void DisplayPastryTotal_CalculateCostOfThreePastry_int()
     {
       int numberOfPastriesRequested = 3;
       Pastry newPastryOrder = new Pastry(numberOfPastriesRequested);
       int result = newPastryOrder.DisplayPastryTotal();
       Assert.AreEqual(5, result);
     }
-    
+  
 
+    [TestMethod] // sixth test
+    public void DisplayPastryTotal_CalculatesCostOfTenPastry_int()
+    {
+      Pastry newPastryOrder = new Pastry(10);
+      int result = newPastryOrder.DisplayPastryTotal();
+      Assert.AreEqual(17, result);
+    }
+
+    [TestMethod] //seventh test
+    public void DisplayPastryTotal_CalculateCostOfZeroPastry_int()
+    {
+      Pastry newPastryOrder = new Pastry(0);
+      int result = newPastryOrder.DisplayPastryTotal();
+      Assert.AreEqual(0, result);
+    }
+
+    [TestMethod] // eigth test
+    public void DisplayPastryTotal_CalculateCostOf100Pastry_int()
+    {
+      Pastry newPastryOrder = new Pastry(100);
+      int result = newPastryOrder.DisplayPastryTotal();
+      Assert.AreEqual(167, result);
+    }
   }
 }
