@@ -38,16 +38,12 @@ namespace Bakery.Models
         {
           return ((NumberOfPastries/6*10) + (5));
         }
-        else if (NumberOfPastries % 6 == 2)
-        {
-          return ((NumberOfPastries/6*10) + (4));
-        }
         else
         {
-          return ((NumberOfPastries/6*10) + (2));
+          return ((NumberOfPastries/6*10) + (NumberOfPastries % 6 * 2));
         }
       }
     }
-    
+
   }
 }
