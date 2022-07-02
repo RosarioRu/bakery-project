@@ -49,5 +49,14 @@ namespace Bakery.Tests
       Assert.AreEqual(10, result);
     }
 
+    [TestMethod] // sixth test
+    public void DisplayBreadTotal_CalculatesCostOf9Loaves_int()
+    {
+      int numberOfLoavesRequested = 9;
+      Bread newBreadOrder = new Bread(numberOfLoavesRequested);
+      int result = newBreadOrder.DisplayBreadTotal();
+      Assert.AreEqual(30, result);
+    }
+
   }
 }
