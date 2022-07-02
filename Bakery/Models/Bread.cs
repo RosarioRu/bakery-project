@@ -22,7 +22,8 @@ namespace Bakery.Models
     //private methods
     private int CostOfBread()
     {
-      return LoavesOfBread*5;    
+      
+      return LoavesOfBread * 5 - (LoavesOfBread/3*5);    
     }
     //properties, constructors, methods, etc. 
   }
