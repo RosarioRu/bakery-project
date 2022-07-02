@@ -20,34 +20,21 @@ namespace Bakery.Models
     //private methods
     private int PastryTotal()
     {
-      if (NumberOfPastries == 5)
+      if (NumberOfPastries % 6 == 0)
       {
-        return 
-      return NumberOfPastries * 2;
+        return NumberOfPastries/6*10;
+      }
+      else
+      {
+        if (NumberOfPastries % 6 == 3)
+        {
+          return ((NumberOfPastries/6*10) + (5));
+        }
+        else
+        {
+          return 0; //temporary
+        }
+      }
     }
-
-
-
-    // properties
-    // public int LoavesOfBread {get;}
-
-    // constructor
-    // public Bread(int loavesOfBread)
-    // {
-    //   LoavesOfBread = loavesOfBread;
-    // }
-
-    // public methods
-    // public int DisplayBreadTotal()
-    // {
-    //   return CostOfBread();
-    // }
-
-    // private methods
-    // private int CostOfBread()
-    // {
-    //   return LoavesOfBread * 5 - (LoavesOfBread/3*5);    
-    // }
-    //properties, constructors, methods, etc. 
   }
 }
