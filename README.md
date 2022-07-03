@@ -33,7 +33,7 @@ _MSTest was used to unit test the Models. The price for bread/pastries varies du
 
 ## Known Bugs
 
-* _No known bugs_
+* _If user gives non-numeric answer, such as a string, for number of pastries and they do so twice, the application will fail. Only the first time the user enters the wrong answer type does the program allow for user to re-enter answer._
 
 ## License
 
