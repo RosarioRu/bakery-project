@@ -24,7 +24,7 @@ namespace Bakery
       CalculateOrderTotal();
     }
 
-    public static void GetBreadTotal()
+    private static void GetBreadTotal()
     {
       Console.WriteLine("How Many loaves of bread would you like to order?");
       string breadAnswer = Console.ReadLine();
@@ -36,7 +36,7 @@ namespace Bakery
       }
     }
 
-    public static void GetPastryTotal()
+    private static void GetPastryTotal()
     {
       Console.WriteLine("How many croissants would you like to order?");
       string pastryAnswer = Console.ReadLine();
@@ -48,7 +48,7 @@ namespace Bakery
       }
     }
 
-    public static void CalculateOrderTotal()
+    private static void CalculateOrderTotal()
     {
       Console.WriteLine(" ");
       Console.WriteLine("You have requested " + requestedLoaves + " loaves of bread and " + requestedPastries + " croissants."); 
