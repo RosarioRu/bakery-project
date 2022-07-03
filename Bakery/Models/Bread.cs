@@ -22,6 +22,5 @@ namespace Bakery.Models
     {
       return LoavesOfBread * 5 - (LoavesOfBread/3*5);    
     }
-    //properties, constructors, methods, etc. 
   }
 } 
